@@ -1,0 +1,106 @@
+body{
+    background: rgb(255,107,0);
+    background: linear-gradient(0deg, rgba(255,107,0,1) 3%, rgba(255,135,49,1) 12%, rgba(255,176,119,1) 100%);
+}
+
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 370px;
+    height: 370px;
+    border-radius: 60%;
+    border: 4px burlywood;
+  }
+
+  .PERFIL {
+    text-align: center;
+  }
+
+  h1 
+  {
+    font-family: Luminari, fantasy;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Luminari, fantasy;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.gallery-container
+{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    border: 15px;
+}
+
+.video-container h1{
+    text-align: left;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+  }
+
+
+.gallery-container a
+{
+padding: 10px;
+}
+ 
+.gallery-container .imagem
+{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-container .imagem img
+{
+    width: 100%;
+    transition: 100%;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+.gallery-container .imagem:hover img{
+    transform: scale(1.5);
+}
+
+@media screen and (max-widith:1200px) {
+    
+    .gallery-container .imagem{
+        flex: 33,33px;    
+    }
+}
+
+@media screen and (max-widith:768px)
+{
+    .gallery-container .imagem{
+        flex: 50px;    
+    }
+    .gallery-container{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-widith:480px) {
+    
+    .gallery-container .imagem{
+        flex: 100px;    
+    }
+}
